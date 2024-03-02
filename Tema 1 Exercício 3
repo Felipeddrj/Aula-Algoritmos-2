@@ -1,0 +1,27 @@
+algoritmo "Soma de 10 Números e suas médias"
+var
+   numero, soma: real
+   i: inteiro
+   resultadoSoma: real
+
+funcao calcularSomaNumeros(): real
+inicio
+   soma <- 0
+
+   para i de 1 ate 10 faca
+      escreval("Digite o ", i, "º número real: ")
+      leia(numero)
+      soma <- soma + numero
+   fimpara
+
+   retorne soma
+fimfuncao
+funcao media : real
+retorne resultadoSoma/10
+fimfuncao
+
+inicio
+   resultadoSoma <- calcularSomaNumeros()
+   escreval("A soma dos 10 números é: ", resultadoSoma)
+   escreval("A média desses números é: ", media)
+fimalgoritmo
