@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+    const int tamanho = 10;
+    int numeros[tamanho];
+    int numerosPar = 0;
+
+    for (int i = 0; i<tamanho; ++i) {
+        std::cout << "Digite " << i + 1 << " numero: ";
+        std::cin >> numeros[i];
+    }
+    for (int i = 0; i<tamanho; ++i){
+        if (numeros[i] % 2 == 0){
+            numerosPar++;
+        }
+    }
+    for (int i = 0; i<tamanho; i++){
+        if(numeros[i] % 2 == 0){
+            std::cout << numeros[i] << " Eh par!";
+        }
+    }
+    std::cout << "Tem: " << numerosPar << " pares!"; 
+
+    return 0;
+}
