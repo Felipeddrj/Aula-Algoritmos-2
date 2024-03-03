@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+
+const int tamanho = 10;
+float notas[tamanho];
+float media = 0;
+int acima = 0;
+int abaixo = 0;
+
+for (int i = 1; i <= 10; i++){
+    std::cout << "Informe a nota do aluno " << i << " ";
+    std::cin >> notas[i];
+    media = media + notas[i];
+    if (notas[i] >= 7){
+        acima++;
+    }else{
+        abaixo++;
+    }
+}
+std::cout << "A media geral foi de: \n" << media/10 << "!\n";
+std::cout << acima << " Alunos estao acima da media!\n";
+std::cout << abaixo << " Alunos abaixo da media!\n";
+}
